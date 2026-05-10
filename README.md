@@ -1,16 +1,71 @@
-# rent_it
+# Rent It
 
-A new Flutter project.
+Rent It is a Flutter mobile application for a rental marketplace.  
+The app allows users to browse rental items, view listings, manage wishlists, and navigate between different rental-related sections.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- User authentication screens:
+  - Login
+  - Sign up
+  - Profile
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Home screen with:
+  - Browse by type section
+  - Fresh listings section
+  - Location cards
+  - Statistics section
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Browse screen for exploring rental items
+
+- Wishlist screen
+
+- Notifications screen
+
+- Bookings screen
+
+- My Listings screen
+
+- Rentals screen
+
+---
+
+## Tech Stack
+
+- Flutter
+- Dart
+- Dio for API requests
+- Shared Preferences for local storage
+- Flutter Native Splash
+- Custom reusable widgets
+
+---
+
+## Project Structure
+
+```text
+lib/
+├── core/
+│   ├── Networks/
+│   │   ├── api_error.dart
+│   │   ├── api_exceptions.dart
+│   │   ├── api_services.dart
+│   │   └── dio_Client.dart
+│   ├── constants/
+│   └── utils/
+│
+├── features/
+│   ├── Auth/
+│   ├── Bookings/
+│   ├── Browse/
+│   ├── Home/
+│   ├── Notifications/
+│   ├── Rentels/
+│   ├── Wish_Lists/
+│   └── myListings/
+│
+├── shared/
+├── main.dart
+└── rootView.dart
