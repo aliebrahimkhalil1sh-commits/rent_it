@@ -5,7 +5,7 @@ import 'package:rent_it/core/utils/pref_Helpers.dart';
 class DioClient {
   final Dio _dio = Dio(
     BaseOptions(
-      baseUrl: 'https://graduation-project-production-45fb.up.railway.app/api/v1',
+      baseUrl: 'http://10.0.2.2:8080/api/v1',
       headers: {"contentType": 'application/json'},
     ),
   );
